@@ -128,9 +128,10 @@ for (i = 0; i < fl; i++) {
 
 zcount=fl-1;
 
-var dog = $('.dnum iframe').attr("src");
-
-console.log(dog[zcount] + " uno");
+//var dog = $('.dnum iframe').attr("src");
+var dog = $('.dnum iframe');
+var pig = dog[zcount];
+console.log(pig.attr("src") );
   
 }
 
@@ -138,12 +139,6 @@ console.log(dog[zcount] + " uno");
 wip=function(){
 
 for (i = 0; i < fl; i++) {
-
-var dog = $('.dnum iframe').attr("src");
-
-console.log(dog + " uno");
-  
-console.log(dog[i]);
   
 //var link = $(fram iframe").attr("src");
 //$.get(link, function (response){ var html = response; var html_src = 'data:text/html;charset=utf-8,' + html; $(".dnum iframe").attr("src" , html_src); });
