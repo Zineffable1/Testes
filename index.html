@@ -107,7 +107,10 @@ margin-top:50px;
 
 </div>
 
+<div id="yeye">
 
+  
+</div>
 
 </body>
 
@@ -115,6 +118,10 @@ margin-top:50px;
 
 <script>
 
+$('#yeye').load('https://radiopaedia.org/cases/ewing-sarcoma-1?lang=gb'); 
+
+
+  
   
 var fram=document.getElementsByClassName("dnum");
 
@@ -123,18 +130,12 @@ var fram=document.getElementsByClassName("dnum");
 var fl=fram.length;
 
 var zcount=fl-1;
-//  var dog = $('.dnum iframe');
-//  console.log(dog);
-//for (i = 0; i < fl; i++) {
+
 if ($('iframe').length){
 $('iframe').each(function(){
 var imgname = $(this).attr('src');
-console.log(imgname);
-//var dog = $('.dnum iframe').attr("src");
+//console.log(imgname);
 
-//var pig = dog[i];
-//  console.log(pig);
-//console.log($('pig').src());
 })
 }
 
@@ -143,8 +144,6 @@ wip=function(){
 
 for (i = 0; i < fl; i++) {
   
-//var link = $(fram iframe").attr("src");
-//$.get(link, function (response){ var html = response; var html_src = 'data:text/html;charset=utf-8,' + html; $(".dnum iframe").attr("src" , html_src); });
 
   
 if(i==zcount){
