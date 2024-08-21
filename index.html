@@ -123,17 +123,19 @@ var fram=document.getElementsByClassName("dnum");
 var fl=fram.length;
 
 var zcount=fl-1;
-  var dog = $('.dnum iframe');
-  console.log(dog);
-for (i = 0; i < fl; i++) {
-
-
+//  var dog = $('.dnum iframe');
+//  console.log(dog);
+//for (i = 0; i < fl; i++) {
+if ($('iframe').length){
+$('iframe').each(function(){
+var imgname = $(this).attr('src');
+console.log(imgname);
 //var dog = $('.dnum iframe').attr("src");
 
-var pig = dog[i];
-  console.log(pig);
-console.log($('pig').src());
-  
+//var pig = dog[i];
+//  console.log(pig);
+//console.log($('pig').src());
+}
 }
 
 
