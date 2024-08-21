@@ -1,1 +1,217 @@
-web
+<! DOCTYPE html>
+
+<html><head>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<title>Viadoctrinae</title><link rel="icon" href="favicon.ico">
+
+<script src="jquery.min.js"></script>
+
+<style>
+
+.dnum{
+
+margin-top:50px;
+
+}
+
+</style>
+
+</head>
+
+
+
+<body style="margin:0px; overflow: hidden;background-color:black">
+
+
+
+<div style="position:fixed; top:50%; right:25%;">
+
+<button class="fbak" style="background-color:black;color:white;">></button>
+
+</div>
+
+<div style="position:fixed; top:50%; left:25%;">
+
+<button class="ffor" style="background-color:black;color:white;"><</button>
+
+</div>
+
+
+
+<div style="display: flex; justify-content: center; align-items: center;">
+
+
+
+
+
+
+
+<div  class="dnum" style="position:fixed; overflow: hidden; margin: 0px auto; max-width: 572px; height:678px; top:40px;">
+
+<iframe scrolling="no" src="https://radiopaedia.org/cases/ewing-sarcoma-extraskeletal-1?lang=gb" style="border: 0px none; margin-left: -20px; height: 4900px; margin-top: -3881px; width: 612px;">
+
+</iframe>
+
+</div>
+
+
+
+
+
+<div  class="dnum" style="position:fixed; overflow: hidden; margin: 0px auto; max-width: 572px; height:700px; top:40px;">
+
+<iframe scrolling="no" src="https://radiopaedia.org/cases/ewing-sarcoma-4?lang=gb" style="border: 0px none; margin-left: -20px; height: 4900px; margin-top: -2134px; width: 612px;">
+
+</iframe>
+
+</div>
+
+
+
+<div  class="dnum" style="position:fixed; overflow: hidden; margin: 0px auto; max-width: 572px; height:700px; top:40px;">
+
+<iframe scrolling="no" src="https://radiopaedia.org/cases/ewing-sarcoma-4?lang=gb" style="border: 0px none; margin-left: -20px; height: 4900px; margin-top: -1256px; width: 612px;">
+
+</iframe>
+
+</div>
+
+
+
+
+
+<div class="dnum" style="position:fixed; overflow: hidden; margin: 0px auto; max-width: 572px; height:700px; top:40px">
+
+<iframe scrolling="no" src="https://radiopaedia.org/cases/ewing-sarcoma-20?lang=gb" style="border: 0px none; margin-left: -20px; height: 4900px; margin-top: -1391px; width: 612px;">
+
+</iframe>
+
+</div>
+
+
+
+<div class="dnum" style="position:fixed; overflow: hidden; margin: 0px auto; max-width: 572px; height:677px; top:40px">
+
+<iframe scrolling="no" src="https://radiopaedia.org/cases/ewing-sarcoma-1?lang=gb" style="border: 0px none; margin-left: -20px; height: 4900px; margin-top: -2415px; width: 612px;">
+
+</iframe>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+<script>
+
+var fram=document.getElementsByClassName("dnum");
+
+var fl=fram.length;
+
+var zcount=fl-1;
+
+wip=function(){
+
+for (i = 0; i < fl; i++) {
+
+if(i==zcount){
+
+fram[i].style.display = "block";
+
+}else{
+
+fram[i].style.display = "none";
+
+}
+
+}
+
+}
+
+
+
+
+
+$(".fbak").click(function(){
+
+if(zcount==0){}else{
+
+zcount=zcount-1;
+
+wip();
+
+
+
+}
+
+})
+
+
+
+$(".ffor").click(function(){
+
+if(zcount==fl-1){}else{
+
+zcount=zcount+1;
+
+wip();
+
+
+
+}
+
+})
+
+
+
+$(document).bind("keydown", bigBro);
+
+function bigBro(z) {
+
+//console.log(z.code);
+
+if(z.code=="ArrowRight"){
+
+if(zcount==0){}else{
+
+zcount=zcount-1;
+
+wip();
+
+}
+
+}
+
+if(z.code=="ArrowLeft"){
+
+if(zcount==fl-1){}else{
+
+zcount=zcount+1;
+
+wip();
+
+
+
+}
+
+}
+
+}
+
+</script>
+
+
+
+</html>
