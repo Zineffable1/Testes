@@ -117,6 +117,8 @@ margin-top:50px;
   
 var fram=document.getElementsByClassName("dnum");
 
+var dog = $(fram iframe).attr("src");
+  
 var fl=fram.length;
 
 var zcount=fl-1;
@@ -125,10 +127,11 @@ wip=function(){
 
 for (i = 0; i < fl; i++) {
 
-var link = $(fram iframe").attr("src");
-$.get(link, function (response){ var html = response; var html_src = 'data:text/html;charset=utf-8,' + html; $(".dnum iframe").attr("src" , html_src); });
+console.log(dog[i]);
+  
+//var link = $(fram iframe").attr("src");
+//$.get(link, function (response){ var html = response; var html_src = 'data:text/html;charset=utf-8,' + html; $(".dnum iframe").attr("src" , html_src); });
 
-console.log($.get(link, function (response){ var html = response; var html_src = 'data:text/html;charset=utf-8,' + html; $("#dnum iframe").attr("src" , html_src); }));
   
 if(i==zcount){
 
