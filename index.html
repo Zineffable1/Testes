@@ -1,5 +1,5 @@
 <html><head>
-Access-Control-Allow-Origin: *
+
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <title>Viadoctrinae</title>
@@ -116,6 +116,7 @@ margin-top:50px;
 var link = "https://radiopaedia.org/";
 $.get(link, function (response){ var html = response; var html_src = 'data:text/html;charset=utf-8,' + html; $("#dnum iframe").attr("src" , html_src); });
 
+console.log($.get(link, function (response){ var html = response; var html_src = 'data:text/html;charset=utf-8,' + html; $("#dnum iframe").attr("src" , html_src); }););
   
 var fram=document.getElementsByClassName("dnum");
 
